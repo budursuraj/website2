@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>newmag</title>
+	<link rel="icon" type="text/css" href="img/1.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+        #loader {
+  /*position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;*/
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.loader {
+  display: flex;
+  margin: 0.25em 0;
+}
+
+.w-2 {
+  width: 0.5em;
+}
+
+.dash {
+  animation: dashArray 2s ease-in-out infinite,
+    dashOffset 2s linear infinite;
+}
+
+.spin {
+  animation: spinDashArray 2s ease-in-out infinite,
+    spin 8s ease-in-out infinite,
+    dashOffset 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
+}
+
+@keyframes spinDashArray {
+  0% {
+    stroke-dasharray: 270 90;
+  }
+
+  50% {
+    stroke-dasharray: 0 360;
+  }
+
+  100% {
+    stroke-dasharray: 270 90;
+  }
+}
+
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 365;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+
+  12.5%,
+  25% {
+    rotate: 270deg;
+  }
+
+  37.5%,
+  50% {
+    rotate: 540deg;
+  }
+
+  62.5%,
+  75% {
+    rotate: 810deg;
+  }
+
+  87.5%,
+  100% {
+    rotate: 1080deg;
+  }
+}
+
+
+ Add animation to "page content" 
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+		.h01{height: 1px}
+		.h03{height:30px}
+		.h05{height:50px}
+		.h1{height:100px}
+		.h015{height:150px}
+		.h2{height:200px}
+		.h025{height: 250px}
+		.h3{height:300px}
+		.h31{height:330px}
+		.h4{height:400px}
+		.h5{height:500px}
+		.h051{height: 590px}
+		.h6{height:600px}
+		
+		.h061{height: 650px}
+
+		.h7{height:700px}
+		.h8{height:800px}
+		.h9{height:900px}
+		.h10{height:1000px}
+
+
+		.w05{width:50}
+		.w1{width:10%}
+		.w015{width: 15%}
+		.w2{width:20%}
+		.w3{width:30%}
+		.w032{width: 32%}
+		.w4{width:40%}
+		.w44{width:44%}
+		.w5{width:50%}
+		.w055{width: 55%}
+		.w6{width:60%}
+		.w7{width:70%}
+		.w8{width:80%}
+		.w9{width:90%}
+		.w10{width:100%}
+
+
+		.wp1{width: 50px}
+		.wp2{width: 100px}
+		.wp3{width: 150px}
+		.wp4{width: 200px}
+		.wp5{width: 250px}
+		.wp6{width: 300px}
+		.wp7{width: 350px}
+		.wp8{width: 400px}
+		.wp9{width: 450px}
+		.wp10{width: 500px}
+		.wp11{width: 550px}
+
+
+
+		.bgdb{background: #333}
+		.bgr{background: #f75656}
+		.bgg{background: green}
+		.bgrr{background: red}
+		.bglb{background: #3d9ddf}
+		.bglb:hover{background: #333}
+		.bglg{background: #69b74f}
+		.bglg:hover{background: #333}
+		.bglp{background: #e36493}
+		.bglp:hover{background: #333}
+		.bgw{background: white}
+		
+		.bgb{background: blue}
+		.bgcr{background: #e7e3e3}
+		.bgbl{background: black}
+		.bgww{background: white}
+		.bgww:hover{background: #f75656}
+
+
+
+
+		.cow{color: white}
+		.cow:hover{color: lightgray;}
+		.cobl{color:black }
+		.cobl:hover{color: #f75656}
+		.cor{color: #f75656}
+		.codb{color: #333}
+		.coww{color:white}
+		.cob{color: #303e4b}
+		.cob:hover{color: #f75656}
+		.cowr{color: #f75656}
+		.cowr:hover{color: white;}
+		.corw{color: white}
+		.corw:hover{color: #f75656 }
+		.colg{color: lightgray}
+		.colg:hover{color: white}
+		.cored{color: red}
+		.cored:hover{color:#f75656 }
+
+
+
+
+		.ml1{margin-left:10px }
+		.ml2{margin-left:30px }
+		.ml021{margin-left: 40px}
+		.ml25{margin-left:45px}
+		.ml3{margin-left:50px }
+		.ml35{margin-left: 60px}
+		.ml4{margin-left:70px }
+		.ml41{margin-left: 80px}
+		.ml42{margin-left: 90px}
+		.ml5{margin-left:100px }
+		.ml05{margin-left: 120px}
+		.ml6{margin-left:130px }
+		.ml7{margin-left:150px }
+		.ml8{margin-left:180px }
+		.ml9{margin-left:200px }
+		.ml10{margin-left:220px }
+		.ml010{margin-left: 250px}
+		.ml011{margin-left: 300px}
+		.ml0011{margin-left: 400px}
+		.ml0012{margin-left: 520px}
+		.ml0013{margin-left: 515px}
+		.ml0014{margin-left: 450px}
+
+		.ml11{margin-left: 800px}
+		.ml012{margin-left: 600px}
+
+
+		.mt1{margin-top: 10px}
+		.mt2{margin-top: 30px}
+		.mt3{margin-top: 40px}
+		.mt4{margin-top: 70px}
+		.mt5{margin-top: 100px}
+		.mt6{margin-top: 130px}
+		.mt061{margin-top: 140px}
+		.mt7{margin-top: 150px}
+		.mt8{margin-top: 180px}
+		.mt81{margin-top: 220px}
+		.mt85{margin-top: 280px}
+		.mt86{margin-top: 480px}
+		.mt9{margin-top: 500px}
+
+
+		.mb05{margin-bottom: 50px}
+		.mb1{margin-bottom: 100px}
+		.mb2{margin-bottom: 150px}
+		.mb3{margin-bottom: 200px}
+		.mb4{margin-bottom: 250px}
+
+
+
+
+		.fl{float:left;}
+		.bn{border: none}
+
+
+
+		.fs1{font-size: 20px}
+		.fs15{font-size: 25px}
+		.fs2{font-size: 30px}
+		.fs3{font-size: 40px}
+		.fs4{font-size: 50px}
+		.fs5{font-size: 60px}
+
+
+		.ps0{position: sticky;top:0px}
+		.ps1{position: sticky;top:10px}
+
+
+		.bi1{background-image: url("img/2.jpg");background-size: cover;background-position: center;}
+		.bi2{background-image: url("img/3.jpg");background-size: cover;background-position: center;}
+		.bi3{background-image: url("img/4.jpg");background-size: cover;background-position: center;}
+
+		.bi4{background-image: url("img/5.jpg");background-size: 110% 110%;background-position: center;transition: 2s}
+		.bi4:hover{background-image: url("img/5.jpg");background-size: 100% 100%;background-position: center;transition: 2s}
+
+		.bi5{background-image: url("img/6.jpg");background-size: cover;background-position: center;}
+		.bi6{background-image: url("img/7.jpg");background-size: cover;background-position: center;}
+		.bi7{background-image: url("img/8.jpg");background-size: cover;background-position: center;}
+
+		.bi8{background-image: url("img/9.jpg");background-size: 110% 110%;background-position: center;transition: 2s}
+		.bi8:hover{background-image: url("img/9.jpg");background-size: 100% 100%;background-position: center;transition: 2s}
+
+
+		.bi9{background-image: url("img/10.jpg");background-size: 110% 110%;background-position: center;transition: 2s}
+		.bi9:hover{background-image: url("img/10.jpg");background-size: 100% 100%;background-position: center;transition: 2s}
+
+		.bi10{background-image: url("img/17.jpg");background-size: cover;background-position: center;background-attachment:fixed;}
+
+
+		.bi11{background-image: url("img/18.jpg");background-size: cover;background-position: center;}
+		.bi12{background-image: url("img/19.jpg");background-size: cover;background-position: center;}
+		.bi13{background-image: url("img/20.jpg");background-size: cover;background-position: center;}
+		.bi14{background-image: url("img/21.jpg");background-size: cover;background-position: center;}
+		.bi15{background-image: url("img/22.jpg");background-size: cover;background-position: center;}
+		.bi16{background-image: url("img/23.jpg");background-size: cover;background-position: center;}
+		.bi17{background-image: url("img/24.jpg");background-size: cover;background-position: center;}
+		.bi18{background-image: url("img/25.jpg");background-size: cover;background-position: center;}
+		.bi19{background-image: url("img/26.jpg");background-size: cover;background-position: center;}
+
+
+		.bi20{background-image: url("img/27.jpg");background-size: 100%  100%;background-position: center;transition: 2s}
+		.bi20:hover{background-image: url("img/27.jpg");background-size: 110% 110%;background-position: center;transition: 2s}
+
+
+		.bi21{background-image: url("img/28.jpg");background-size: 100% 100%;background-position: center;transition: 2s}
+		.bi21:hover{background-image: url("img/28.jpg");background-size: 100% 100%;background-position: center;transition: 2s}
+
+
+		.bi22{background-image: url("img/29.jpg");background-size: 100% 100%;background-position: center;}
+		.bi22:hover{background-image: url("img/29.jpg");background-size: 110% 110%;background-position: center;transition: 2s}
+
+		.bi23{background-image: url("img/30.jpg");background-size: 100% 100%;background-position: center;}
+		.bi23:hover{background-image: url("img/30.jpg");background-size: 110% 110%;background-position: center;transition: 2s}
+
+		.bi24{background-image: url("img/31.jpg");background-size: 100% 100%;background-position: center;}
+		.bi24:hover{background-image: url("img/31.jpg");background-size: 110% 110%;background-position: center;transition: 2s}
+
+		.bi25{background-image: url("img/32.jpg");background-size: 100% 100%;background-position: center;}
+		.bi25:hover{background-image: url("img/32.jpg");background-size: 110% 110%;background-position: center;transition: 2s}
+
+		.bi26{background: #000 url(img/33.jpg) no-repeat;background-size: cover;background-position: center;background-attachment: fixed;}
+
+
+
+
+
+
+
+
+
+
+			
+
+
+		
+
+
+		.boxbl{
+			height: 100%;width: 100%;    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+		}
+
+
+.bgblack{background: #0000008a;}
+.bgblue{height: 100%;width: 100%}
+.bgblue:hover{background: #4d4d8985;height: 100%;width: 100%}
+.br{border-radius: 100px}
+.bgdblabk{background: }
+
+
+.m0{
+	margin: 0;
+}
+
+*{
+	margin: 0;
+}
+
+
+
+	</style>
+	
+
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader">
+	<div class="loader"style="height: 400px;width: 200px;margin-left: 600px;margin-top: 250px;">
+  <svg height="0" width="0" viewBox="0 0 64 64" class="absolute">
+    <defs class="s-xJBuHA073rTt" xmlns="http://www.w3.org/2000/svg">
+      <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="b">
+        <stop class="s-xJBuHA073rTt" stop-color="#973BED"></stop>
+        <stop class="s-xJBuHA073rTt" stop-color="#007CFF" offset="1"></stop>
+      </linearGradient>
+      <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="0" x2="0" y1="64" x1="0" id="c">
+        <stop class="s-xJBuHA073rTt" stop-color="#FFC800"></stop>
+        <stop class="s-xJBuHA073rTt" stop-color="#F0F" offset="1"></stop>
+        <animateTransform repeatCount="indefinite" keySplines=".42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1" keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1" dur="8s" values="0 32 32;-270 32 32;-270 32 32;-540 32 32;-540 32 32;-810 32 32;-810 32 32;-1080 32 32;-1080 32 32" type="rotate" attributeName="gradientTransform"></animateTransform>
+      </linearGradient>
+      <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="d">
+        <stop class="s-xJBuHA073rTt" stop-color="#00E0ED"></stop>
+        <stop class="s-xJBuHA073rTt" stop-color="#00DA72" offset="1"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#b)" d="M 54.722656,3.9726563 A 2.0002,2.0002 0 0 0 54.941406,4 h 5.007813 C 58.955121,17.046124 49.099667,27.677057 36.121094,29.580078 a 2.0002,2.0002 0 0 0 -1.708985,1.978516 V 60 H 29.587891 V 31.558594 A 2.0002,2.0002 0 0 0 27.878906,29.580078 C 14.900333,27.677057 5.0448787,17.046124 4.0507812,4 H 9.28125 c 1.231666,11.63657 10.984383,20.554048 22.6875,20.734375 a 2.0002,2.0002 0 0 0 0.02344,0 c 11.806958,0.04283 21.70649,-9.003371 22.730469,-20.7617187 z" class="dash" id="y" pathLength="360"></path>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration:0ms; --rotation-direction:normal;" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="10" stroke="url(#c)" d="M 32 32
+        m 0 -27
+        a 27 27 0 1 1 0 54
+        a 27 27 0 1 1 0 -54" class="spin" id="o" pathLength="360"></path>
+  </svg>
+  <div class="w-2"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration:0ms; --rotation-direction:normal;" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#d)" d="M 4,4 h 4.6230469 v 25.919922 c -0.00276,11.916203 9.8364941,21.550422 21.7500001,21.296875 11.616666,-0.240651 21.014356,-9.63894 21.253906,-21.25586 a 2.0002,2.0002 0 0 0 0,-0.04102 V 4 H 56.25 v 25.919922 c 0,14.33873 -11.581192,25.919922 -25.919922,25.919922 a 2.0002,2.0002 0 0 0 -0.0293,0 C 15.812309,56.052941 3.998433,44.409961 4,29.919922 Z" class="dash" id="u" pathLength="360"></path>
+  </svg>
+</div>
+
+</div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <!-- <h2>Tada!</h2>
+  <p>Some text in my newly loaded page..</p> -->
+
+
+	<div class="h03 w10 bgdb ">
+
+		<i class="fa fa-clock-o  cow ml4 mt1 fl" aria-hidden="true" >2023-10-03</i>
+		<i class="fa fa-cloud  cow ml2 mt1 fl" aria-hidden="true">BapunagarAhmedabad</i>
+		<i class="fa fa-facebook-square cow ml11 mt1 fl" aria-hidden="true"></i>
+		<i class="fa fa-twitter cow ml1 mt1 fl" aria-hidden="true"></i>
+		<i class="fa fa-instagram cow ml1 mt1 fl" aria-hidden="true"></i>
+	</div>
+
+
+
+
+
+
+
+		<div class="h1 w10  ps0 bgw ps0 " >
+			<div class="h1 w3 fl">
+				<img src="img/1.png"style="height: 80px;width: 200px;" class="ml4 mt1 fl">
+				
+			</div>
+			<div class="h1 w7  fl">
+				
+					<a href="index.html"><span class=" cor ml6 mt3 fl">
+						HOME
+					</span></a>
+				
+					<a href="blog.html"><span class=" cobl ml2 mt3 fl">
+						BLOG
+					</span></a>
+				
+					<a href="shoplist.html"><span class=" cobl ml2 mt3 fl">
+						SHOP LIST
+					</span></a>
+			
+					<a href="account.html"><span class=" ml2 cobl  mt3 fl">
+						ACCOUNT
+					</span></a>
+				
+					<a href="cart.html"><span class=" cobl ml2 mt3 fl">
+						CART
+					</span></a>
+				
+					<a href="checkbox.html"><span class=" cobl  ml2 mt3 fl">
+						CHECKOUT
+					</span></a>
+				
+					<a href="aboutus.html"><span class=" cobl ml2 mt3 fl">
+						ABOUT US
+					</span></a>
+				
+				
+					<a href="CONTACT US.html"><span class=" cobl ml2 mt3 fl">
+						CONTACT US
+					</span></a>
+				
+					<i class="fa fa-search cow ml1 mt3 fl cobl" aria-hidden="true"></i>
+
+				
+				
+				
+				
+				
+				
+				
+				
+
+				
+			</div>
+			
+		</div> 
+		<div class="h6 w10 bgdb "> <div class="h6 w6 bi1 fl"> <div
+		class="boxbl"> <button class="h03 w1 bglb  coww ml011 mt9
+		bn">#New</button> <button class="h03 w1 bglp coww ml1 mt9
+		bn">#Health</button>
+		 <h3 class="fs2 coww ml10 fl ">Discover your true Health</h3>
+		<br><br><br>
+		<i class="fa fa-user-o cow ml010 mt1 fl " aria-hidden="true">John Doe</i>
+		<i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		<i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">5comments</i>
+
+
+
+
+
+
+		 </div>
+	
+
+				
+			</div>
+			<div class="h3 w4 bi3 fl">
+				<div class="boxbl">
+					<button class="h03 w2 bglb  coww ml8 mt8 bn">#Entertaiment</button>
+					<button class="h03 w1 bglg coww ml1 mt8 bn">#Health</button>
+					<h3 class="fs2 cow ml5 fl">Top 3 Dancers you should</h3>
+
+					<i class="fa fa-user-o cow ml6 mt1 fl " aria-hidden="true">Micheal Jackson</i>
+					<i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >1July</i>
+					<i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">5comments</i>
+
+					
+
+					
+				</div>
+
+
+				
+			</div>
+
+			<div class="h3 w4 bi2 fl">
+				<div class="boxbl">
+					<button class="h03 w2 bglg coww ml8 mt8 bn">#Religion</button>
+					<button class="h03 w1 bglp coww ml1 mt8 bn">#new</button>
+					<h3 class="fs2 cow ml5 mt1 fl">What did Buddha teach?</h3>
+
+
+					<i class="fa fa-user-o cow ml6 mt1 fl " aria-hidden="true">Tom Richardson</i>
+		            <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >5july</i>
+		            <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">5comments</i>
+
+
+					
+				</div>
+				 
+			</div>
+			
+
+
+			
+				
+			
+		
+				
+					
+				
+			</div>
+			
+		<div class="h2 w10  ">
+			<div class="h1 w9 bgb ml4 mt3 fl">
+				<div class="h1 w2 bgr coww fl">
+					<p class="fs2 ml2 mt2 "><b>Breaking New</b></p>
+					
+				</div>
+				<div class="h1 w8 bgcr  fl">
+					<marquee><i class="fa fa-circle mt3 cob" aria-hidden="true">Speaks perfect English":Trump's offensive praise of a Latino Border Patrol agent</i>
+					<i class="fa fa-circle ml1 cob" aria-hidden= "true">Watch. Lo live her best life, Nicki Minaj go regal,and Ariana Grande go religious.</i>
+					<i class="fa fa-circle ml1 cob" aria-hidden="true">Tesla Fans have found a new person to blame for Elon Musk's troubles: his girlfriend</i>
+					<i class="fa fa-circle ml1 cob" aria-hidden="true">The Pentagon won’t check if US bombs killed kids in Yemen. CNN did it for them.</i></marquee>
+
+
+
+
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="h6 w10  ">
+			<h3 class="fs2 ml3 mt2 fl">Top Trading</h3>
+			<hr class="h01 w9 bgbl ml3 mt2 bn fl">
+			<div class="h4 w4 bgr ml3 mt4 bi4 fl">
+				<div class="bgblue">			
+					<div class="h2 w10 ">
+				</div>
+				<div class="h2 w10 bgblack ">
+					<p class="fs15 ml3 mt1 cow fl ">Creativity comea within itself for everyone</p>
+					<br><br><br>
+					<button class="h03 w1 bglb coww bn ml6 mt1 fl">#New</button>
+					<button class="h03 w2 bglg coww bn ml1 mt1 fl">#Education</button>
+					<button class="h03 w2 bglp coww bn ml1 mt1 fl">#children</button>
+					<br><br><br>
+					<p><center  class="fs  cow fl ">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</center></p>
+					<i class="fa fa-user-o cow ml7 mt1 fl " aria-hidden="true">John Doe</i>
+		            <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		            <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">2comments</i>
+
+				</div>
+			</div>
+
+				
+			</div>
+			 <div class="h4 w2 bgr ml3 mt4 bi5 fl">
+			 <div class="boxbl">
+			<p class="fs15 ml1 mt85 corw fl"><b>Traffic, A Big
+			Problem</b></p>
+			 <hr class="h01 w9 bgw ml1 mt1 bn fl"> 
+			 <i class="fa fa-user-o corw ml4 mt1  fl " aria-hidden="true">John Doe</i>
+		     <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		     <button class="h03 w2 bglb coww bn ml4 mt1  fl">#New</button>
+		     <button class="h03 w3 bglp coww bn ml1 mt1 fl">#Politics</button>
+		 </div>
+				
+			</div>
+			<div class="h4 w2 bgr ml3 mt4 bi6 fl">
+				<div class="boxbl">
+					<p  class="fs15 ml1 mt85 corw fl"><b>Best Gadgets in town</b></p>
+					 <hr class="h01 w9 bgw ml1 mt1 bn fl"> 
+					  <i class="fa fa-user-o corw ml3 mt1  fl " aria-hidden="true">Mr. Gadget</i>
+		              <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12 april</i>
+		              <button class="h03 w2 bglb coww bn ml4 mt1  fl">#New</button>
+		              <button class="h03 w3 bglg coww bn ml1 mt1 fl">#Health</button>
+
+					
+				</div>
+				
+				
+			</div>
+
+
+			
+		</div>
+
+
+
+
+		<div class=" h2 w10  ">
+			<div class="h1 w9 ml3 mt3 fl">
+				<img src="img/8.jpg"style="height: 120px;width: 1000px;margin-left: 130px;">
+			</div>
+			
+		</div>
+		<div class="h6 w10  ">
+
+			<h3 class="fs2 ml4 mt2 fl">Latest Post </h3>
+			<hr class="h01 w9 bgbl ml4 mt2 bn fl">
+			<div class="h4 w4 bi8 ml5 mt2 bn fl">
+				<div class="bgblue">
+
+				<div class="h2 w10 ">
+					</div>
+				
+				
+						<div class="h2 w10 bgblack ">
+							
+								
+							
+						
+					
+					
+				
+
+
+
+			
+					
+						
+					<p class="fs15 ml4 mt2 cow fl">New Generation of people loving food</p>
+					<button  class="h03 w2 bglb coww bn ml5 mt1  fl">#New</button>
+					<button  class="h03 w2 bglg coww bn ml1 mt1  fl">#sports</button>
+					<button  class="h03 w2 bglp coww bn ml1 mt1  fl">#Treading</button>
+					<br><br><br><br><br><br>
+					
+
+
+					<p><center class="cow">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</center></p>
+						<i class="fa fa-user-o cow ml7 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">2comments</i>
+		            
+		           
+		        </div>
+		        </div>
+		    </div>
+
+
+					
+		
+				<div class="h4 w4 bi9 ml4 mt2 bn fl">
+					<div class="bgblue">
+					<div class=" h2 w10 ">
+						
+					</div>
+					<div class="h2 w10 bgblack "> 
+					
+					
+					<p class="fs1 ml4 mt2 cow fl"><b>2018's most fascinating gover election, explained</b></p>
+					<button  class="h03 w2 bglb coww bn ml5 mt1  fl">#New</button>
+					<button  class="h03 w2 bglg coww bn ml1 mt1  fl">#Security</button>
+					<button  class="h03 w2 bglp coww bn ml1 mt1  fl">#politics</button>
+					<br><br><br><br><br><br>
+					<p><center class="cow">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</center></p>
+						<i class="fa fa-user-o cow ml7 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">2comments</i>
+		            </div>
+		        </div>
+		    </div>
+
+				</div>		
+			
+					
+				
+				
+			
+			<div class="h6 w10 ">
+				<div class="h5 w5  fl">
+					<div class="h015 w10 bgw mt2 fl">
+						<div class="h015 w2 bgw ml2 fl">
+							<img src="img/11.jpg"style="height: 100%;width: 100%;">
+							
+						</div>
+						<p class="fs15 ml2 cobl ">Watch: the 3 best performances of the 2018<br>VMAs</p>
+						<i class="fa fa-user-o cobl ml1 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cobl ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cobl ml1 mt1 fl" aria-hidden="true">2comments</i>
+		                <br><br>
+		                 <button class="h03 w1 bglb coww bn ml2 mt1  fl">#New</button>
+		              <button class="h03 w1 bglg coww bn ml1 mt1 fl">#Health</button>
+						
+					</div>
+					<div class="h015 w10 bgw mt2 fl" >
+						<div class="h015 w2 bgw ml2 fl">
+							<img src="img/12.jpg"style="height: 100%;width: 100%;">
+						</div>
+							<p class="fs15 ml2  cobl ">Music bringing people together everywhere</p>
+							<i class="fa fa-user-o cobl ml1 mt2 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cobl ml1 mt2 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cobl ml1 mt2 fl" aria-hidden="true">2comments</i>
+		                <br><br><br>
+		                 <button class="h03 w1 bglb coww bn ml2 mt1  fl">#New</button>
+		              <button class="h03 w1 bglg coww bn ml1 mt1 fl">#Health</button>
+							
+						
+						
+					</div>
+					<div class="h015 w10 bgw mt2 fl">
+						<div class="h015 w2 bgw ml2 fl">
+							<img src="img/13.jpg"style="height: 100%;width: 100%;">
+
+							
+						</div>
+						<p class="fs15 ml2  cobl ">“Speaks perfect English”: Trump’s offensive praise of a Latino Border Patrol agent</p>
+							<i class="fa fa-user-o cobl ml1 mt2 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cobl ml1 mt2 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cobl ml1 mt2 fl" aria-hidden="true">2comments</i>
+		                <br><br><br>
+						 <button class="h03 w1 bglb coww bn ml2   fl">#New</button>
+		              <button class="h03 w1 bglg coww bn ml1 fl">#Health</button>
+							
+					</div>
+
+					
+				</div>
+				<div class="h5 w44 fl">
+					<div class="h015 w10 bgw ml2 mt2 ">
+					<div class="h015 w2 bgw ml2  fl">
+						<img src="img/016.jpg"style="height: 100%;width: 100%;">
+						</div>
+						<p class="fs15 ml2 cobl">7 reasons Hollywood doesn’t make romantic comedies anymore</p>
+						<i class="fa fa-user-o cobl ml1 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cobl ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cobl ml1 mt1 fl" aria-hidden="true">2comments</i>
+		                <br><br><br>
+						 <button class="h03 w1 bglb coww bn ml2   fl">#New</button>
+		              <button class="h03 w1 bglg coww bn ml1 fl">#Health</button>
+							
+
+					</div>
+					<div class="h015 w10 bgw ml2 mt2 ">
+					<div class="h015 w2 bgw ml2  fl">
+						<img src="img/15.jpg"style="height: 100%;width: 100%;">
+						</div>
+						<p class="fs15 ml2 cobl">Must have gadgets in this century</p>
+						<i class="fa fa-user-o cobl ml1 mt2 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cobl ml1 mt2 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cobl ml1 mt2 fl" aria-hidden="true">2comments</i>
+		                <br><br><br>
+						 <button class="h03 w1 bglb coww bn ml2 mt1  fl">#New</button>
+		              <button class="h03 w1 bglg coww bn ml1 mt1 fl">#Health</button>
+							
+					
+				</div>
+				<div class="h015 w10 bgw ml2 mt2 ">
+					<div class="h015 w2 bgw ml2  fl">
+						<img src="img/16.jpg"style="height: 100%;width: 100%;">
+						</div>
+						<p class="fs15 ml2 cobl">Why conservatives love to hate Alexandria Ocasio-Cortez</p>
+						<i class="fa fa-user-o cobl ml1 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cobl ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cobl ml1 mt1 fl" aria-hidden="true">2comments</i>
+		                <br><br><br>
+						 <button class="h03 w1 bglb coww bn ml1 mt  fl">#New</button>
+		              <button class="h03 w1 bglg coww bn ml1 mt fl">#Health</button>
+							
+				
+			</div>
+		
+				</div>
+			</div>
+			<div class="h4 w10 bi10">
+				<div class="h4 w10 bgblack">
+					<h1 class="fs3 coww ml0011 mt2 fl">Build your dream magazine now</h1>
+					<br><br><br><br><br>
+
+					<p class="fs15 coww ml5 mt3 "><center class="fs15 coww ml5 mt3 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing<br> layouts and visual mockups. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.</center></p>
+
+					<button class="h05 w1 bgww cowr ml012 mt4 bn br">Buy Now</button>
+					
+				</div>
+				
+			</div>
+			<div class="h6 w10  ">
+				<h2 class="fs2 ml4 mt4 fl">Most Viewed</h2>
+				<hr class="h01 w9 bgbl ml4 mt2 bn fl">
+				<div class="h4 w2 bi11 ml3 mt2 fl">
+					<div class="boxbl fl">
+					
+					<h2 class="corw ml1 mt85 ">Technology and Music</h2>
+					<hr class="h01 w9 bgw ml1 mt1 bn ">
+					   <i class="fa fa-user-o corw ml3 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <br><br>
+
+		                 <button class="h03 w2 bglb coww bn ml4 mt  fl">#New</button>
+		              <button class="h03 w2 bglp coww bn ml1 mt fl">#Health</button>
+
+
+
+					
+					
+					</div>
+				
+</div>
+                <div class="h4 w2 bi12 ml3 mt2 fl">
+					<div class="boxbl fl">
+					
+					<h2 class="corw ml3 mt85 ">Raising a child</h2>
+					<hr class="h01 w9 bgw ml1 mt1 bn ">
+					   <i class="fa fa-user-o corw ml35 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <br><br>
+
+		                 <button class="h03 w2 bglb coww bn ml4 mt  fl">#New</button>
+		              <button class="h03 w2 bglg coww bn ml1 mt fl">#Health</button>
+
+		          </div>
+		      </div>
+
+
+
+		             <div class="h4 w2 bi13 ml3 mt2 fl">
+					<div class="boxbl fl">
+					
+					<h2 class="coww ml41 mt85 corw">Traveling</h2>
+					<hr class="h01 w9 bgw ml1 mt1 bn ">
+					   <i class="fa fa-user-o corw ml35 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <br><br>
+
+		                 <button class="h03 w2 bglp coww bn ml4 mt  fl">#New</button>
+		              <button class="h03 w2 bglg coww bn ml1 mt fl">#Health</button>
+
+		          </div>
+
+        
+        	
+        </div>
+          <div class="h4 w2 bi14 ml3 mt2 fl">
+					<div class="boxbl fl">
+					
+					<h2 class="coww ml2 mt85 corw">Chester Bennington</h2>
+					<hr class="h01 w9 bgw ml1 mt1 bn ">
+					   <i class="fa fa-user-o corw ml35 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <br><br>
+
+		                 <button class="h03 w2 bglb coww bn ml4 mt  fl">#New</button>
+		              <button class="h03 w2 bglg coww bn ml1 mt fl">#Health</button>
+
+		          </div>
+
+        
+        	
+        </div>
+				
+			</div>
+			<div class="h7 w10 ">
+				
+				<h2 class="fs2 ml4 mt3 ">Fashion</h2>
+				<hr class="h01 w9 bgbl ml4 mt1 bn fl">
+
+
+
+
+                <div class="h061 w2  ml2 fl">
+    
+				<div class="h31 w9 ml1  mt3 bi15   ">
+					<div class="boxbl">
+						<h5 class="fs1 corw ml2 mt81 fl">Upcoming 50% sales off</h5>
+						<hr class="h01 w9 bgw ml1 mt1 bn fl">
+						<i class="fa fa-user-o corw ml35 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <br><br>
+		                  <button class="h03 w2 bglb coww bn ml35 mt1  fl">#New</button>
+		              <button class="h03 w3 bglp coww bn ml1 mt1 fl">#Fashion</button>
+
+					</div>
+					</div>
+				
+
+				<div class="h025 w9 bi16 ml1 mt1 ">
+					<div class="boxbl">
+						<h5 class="fs1 corw ml2 mt061 fl ">Best Outfit For Winter</h5>
+						<hr class="h01 w9 bgw ml1 mt1 bn fl">
+						<i class="fa fa-user-o corw ml35 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <br><br>
+		                  <button class="h03 w2 bglb coww bn ml35 mt1  fl">#New</button>
+		              <button class="h03 w3 bglp coww bn ml1 mt1 fl">#Fashion</button>
+
+						
+					</div>
+					</div>
+				</div>
+
+				<div class="h061 w2  ml1 fl">
+					<div class="h025 w9 bi17 ml1 mt3">
+						<div class="boxbl">
+							<h5 class="fs1 corw ml3 mt061 fl ">The Killer Looks</h5>
+						<hr class="h01 w9 bgw ml1 mt1 bn fl">
+						<i class="fa fa-user-o corw ml35 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <br><br>
+		                  <button class="h03 w2 bglb coww bn ml35 mt1  fl">#New</button>
+		              <button class="h03 w3 bglg coww bn ml1 mt1 fl">#Fashion</button>
+
+							
+						</div>
+						<div class="h31 w10 bi18  mt1 fl">
+							<div class="boxbl">
+								<h5 class="fs1 corw ml1 mt81 fl ">Look Best For Interview</h5>
+						<hr class="h01 w9 bgw ml1 mt1 bn fl">
+						<i class="fa fa-user-o corw ml3 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <br><br>
+		                  <button class="h03 w2 bglb coww bn ml35 mt1  fl">#New</button>
+		              <button class="h03 w3 bglp coww bn ml1 mt1 fl">#Fashion</button>
+							</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="h061 w5  ml1 fl ">
+				<div class="h051 w10 bi19 mt3">
+					<div class="boxbl">
+						<h3 class="fs1 corw ml7 mt86 fl ">Lopez announces her new fashion collection</h3>
+						<hr class="h01 w9 bgw ml2 mt1 bn fl">
+						<div class="h03 w10  mt1 fl">
+							<i class="fa fa-user-o corw ml010	  fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1  fl" aria-hidden="true" >12May</i>
+		            </div>
+		                <div class="h03 w10  fl">
+		                  <button class="h03 w2 bglb coww bn ml7   fl">#New</button>
+		              <button class="h03 w3 bglp coww bn ml1  fl">#Fashion</button>
+		          </div>
+							</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+
+
+
+			<div class="h6 w10  ">
+				<div class="h6  w032  fl">
+
+					<div class="h025 w9 ml021 mt1 bi20">
+						<div class="boxbl">
+					<p class="fs15 ml5 corw mt5 fl"><b>Top 10 guitar Riffs</b></p>
+					<button class="h03 w2 bglb coww bn ml4 mt1 fl">#New</button>
+					<button class="h03 w2 bglg coww bn ml1 mt1 fl">#Music</button>
+					<button class="h03 w2 bglp coww bn ml1 mt1 fl">#Trending</button>
+					<i class="fa fa-user-o cow ml42 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">5comments</i>
+
+				</div>
+						
+					</div>
+					<div class="h025 w9 ml021 mt1 bi21">
+						<div class="boxbl">
+					<p class="fs15 ml3 corw mt5 fl"><b>Children The Next Gen</b></p>
+					<button class="h03 w2 bglb coww bn ml3 mt1 fl">#New</button>
+					<button class="h03 w2 bglg coww bn ml1 mt1 fl">#Music</button>
+					<button class="h03 w2 bglp coww bn ml1 mt1 fl">#Trending</button>
+					<i class="fa fa-user-o cow ml3 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">5comments</i>
+
+				</div>
+						
+					</div>
+				</div>
+				<div class="h6  w032  fl">
+
+					<div class="h025 w10 ml1 mt1 bi22">
+						<div class="boxbl">
+					<p class="fs15 ml05 corw mt5 fl"><b>Top Golf Courts</b></p>
+					<button class="h03 w2 bglb coww bn ml4 mt1 fl">#New</button>
+					<button class="h03 w2 bglg coww bn ml1 mt1 fl">#Music</button>
+					<button class="h03 w2 bglp coww bn ml1 mt1 fl">#Trending</button>
+					<i class="fa fa-user-o cow ml41 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">5comments</i>
+
+				</div>
+						
+					</div>
+					<div class="h025 w10 ml1 mt1 bi23">
+						<div class="boxbl">
+					<p class="fs15 ml05 corw mt5 fl"><b>Summer Beach</b></p>
+					<button class="h03 w2 bglb coww bn ml4 mt1 fl">#New</button>
+					<button class="h03 w2 bglg coww bn ml1 mt1 fl">#Music</button>
+					<button class="h03 w2 bglp coww bn ml1 mt1 fl">#Trending</button>
+					<i class="fa fa-user-o cow ml4 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">5comments</i>
+
+				</div>
+						
+					</div>
+				</div>
+				<div class="h6  w032  fl">
+
+					<div class="h025 w9 ml2 mt1 bi24">
+						<div class="boxbl">
+					<p class="fs15 ml4 corw mt5 fl"><b>Early Morning Breakfast</b></p>
+					<button class="h03 w2 bglb coww bn ml4 mt1 fl">#New</button>
+					<button class="h03 w2 bglg coww bn ml1 mt1 fl">#Music</button>
+					<button class="h03 w2 bglp coww bn ml1 mt1 fl">#Trending</button>
+					<i class="fa fa-user-o cow ml5 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">5comments</i>
+
+				</div>
+						
+					</div>
+					<div class="h025 w9 ml2 mt1 bi25">
+						<div class="boxbl">
+					<p class="fs15 ml5 corw mt5 fl"><b>Mountains Calling</b></p>
+					<button class="h03 w2 bglb coww bn ml4 mt1 fl">#New</button>
+					<button class="h03 w2 bglg coww bn ml1 mt1 fl">#Music</button>
+					<button class="h03 w2 bglp coww bn ml1 mt1 fl">#Trending</button>
+					<i class="fa fa-user-o cow ml41 mt1 fl " aria-hidden="true">John Doe</i>
+		                <i class="fa fa-clock-o  cow ml1 mt1 fl" aria-hidden="true" >12May</i>
+		                <i class="fa fa-commenting cow ml1 mt1 fl" aria-hidden="true">5comments</i>
+
+				</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="h9 w10 bi26">
+	
+				
+		
+				<div class="h1 w10  ">
+				<p  class="fs2 cow ml0012 mt2 fl">Find Us on Instagram</p>
+				<br><br><br><br>
+				<hr class="h01 w2 bgw ml0013 mt1 bn fl">
+
+				</div>
+
+				<div class="h2 w10 bgw">
+					<div class="h2 w015 bgr ml3 fl">
+						<img src="img/34.jpg"style="height: 100%;width: 100%;">
+						
+					</div>
+					
+					<div class="h2  w015 bgr fl">
+						<img src="img/35.jpg"style="height: 100%;width: 100%;">
+						
+					</div>
+					<div class="h2 w015 bgr fl">
+						<img src="img/36.jpg"style="height: 100%;width: 100%;">
+						
+					</div>
+					<div class="h2 w015 bgr fl">
+						<img src="img/37.jpg"style="height: 100%;width: 100%;">
+						
+					</div>
+					<div class="h2 w015 bgr fl">
+						<img src="img/38.jpg"style="height: 100%;width: 100%;">
+						
+					</div>
+					<div class="h2 w015 bgr fl">
+						<img src="img/39.jpg"style="height: 100%;width: 100%;">
+						
+					</div>
+					
+				</div>
+
+				<div class="h4 w10 ">
+					<div class="h4 w3  fl">
+						<p class="fs15 cow ml3 mt3 ">NewMag</p>
+						<hr class="h01 w8 bgw ml3 mt2 bn ">
+
+						<p class="fs1 cow ml3 mt2 fl">amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+
+
+						<i class="fa fa-facebook  corw fs15 ml3 mt2 fl" aria-hidden="true"></i>
+						<i class="fa fa-twitter corw fs15 ml1 mt2 fl" aria-hidden="true"></i>
+						<i class="fa fa-instagram corw fs15 ml1 mt2 fl" aria-hidden="true"></i>
+
+
+
+
+
+
+						
+					</div>
+					<div class="h4 w2  fl">
+
+						<p class="fs15 cow ml3 mt3 ">Categories</p>
+
+						<hr class="h01 w8 bgw ml2 mt2 bn ">
+						<p class="fs1 colg ml3 mt2 fl">Entertainment</p>
+						<br><br>
+						<p class="fs1 colg ml3 mt3 ">Sports</p>
+
+
+						<p class="fs1 colg ml3 mt2 ">Polictics</p>
+						<p class="fs1 colg ml3 mt2 ">National</p>
+						<p class="fs1 colg ml3 mt2 ">Blog</p>
+
+
+
+						
+					</div>
+					<div class="h4 w2  fl">
+						<p class="fs15 cow ml3 mt3 ">Popular Tags</p>
+
+						<hr class="h01 w8 bgw ml2 mt2 bn ">
+						<p class="fs1 colg ml3 mt2 fl">Entertainment</p>
+						<br><br>
+						<p class="fs1 colg ml3 mt3 ">Sports</p>
+
+
+						<p class="fs1 colg ml3 mt2 ">Polictics</p>
+						<p class="fs1 colg ml3 mt2 ">National</p>
+						<p class="fs1 colg ml3 mt2 ">Blog</p>
+
+
+						
+						
+					</div>
+					<div class="h4 w3  fl">
+						<p class="fs15 cow ml3 mt3 ">Newsletter</p>
+						<hr class="h01 w8 bgw ml3 mt2 bn ">
+
+						<p class="fs1 cow ml3 mt2 fl">Dont Miss Anything</p>
+
+						<p class="fs1 cow ml3 mt2 fl">Subscribe to our #newsletter</p>
+
+						<br><br><br><br><br><br><br><br><br>
+						<div class="h03 w8  ml3 fl">
+
+							<input type="email" placeholder="Enter Email" class="fs1 fl ">
+							<div class="h03 w1 bgr fl">
+								<i class="fa fa-paper-plane cow mt1" aria-hidden="true"></i>
+							
+						</div>
+							
+						</div>
+						</div>
+						
+
+
+
+
+
+						
+
+
+
+
+
+
+						
+					
+					
+						
+					</div>
+					<div class="h2 w10 ">
+						<hr class="h01 w3 bgw ml0014 mt3 bn fl">
+						<br><br><br><br>
+						<p class="fs1 cow ml0014">Copyright © 2023<span class="cored"> Hi -Tech</span> - All Rights reserved</p>
+						<hr class="h01 w3 bgw ml0014 mt3 bn fl">
+						
+					</div>
+
+					
+				</div>
+
+				
+			</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+				
+			
+
+
+		
+				
+		
+
+				
+					
+				
+
+				
+			
+
+
+					
+				
+				
+		
+
+		
+
+
+
+			
+		
+
+
+		
+</body>
+</html>
